@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.orbiting-circle {
+    animation: Orbit 5s linear infinite; /* Adjust animation duration and timing function as needed */
+    transform-origin: center center; /* Ensure orbit around the center of the second circle */
+}
+
+@keyframes Orbit {
+    from {
+        transform: rotate(0deg) translateX(374.5px) rotate(0deg); /* Orbit around the second circle */
+    }
+    to {
+        transform: rotate(360deg) translateX(374.5px) rotate(-360deg); /* Orbit around the second circle */
+    }
+}
