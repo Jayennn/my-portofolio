@@ -4,8 +4,8 @@ import {motion} from "framer-motion";
 import Link from "next/link";
 export function NavigationBar(){
   return (
-   <nav className="fixed top-0 z-10 w-full bg-white flex items-center h-20">
-     <div className="container px-6 flex items-center justify-between">
+   <nav className="animate-bounce fixed top-0 z-10 w-full bg-white flex items-center h-20">
+     <div className="max-w-[90%] mx-auto container px-6 flex items-center justify-between">
        <div className="space-y-1 relative">
           <Link href="/" className="font-extrabold text-3xl text-heading">Giant</Link>
           <motion.svg className="absolute top-8" xmlns="http://www.w3.org/2000/svg" width="101" height="4" viewBox="0 0 101 4" fill="none">
