@@ -13,7 +13,7 @@ export function Card({image, alt, title, exact, href}: CardProps){
   return (
     <div className="group max-w-sm space-y-2">
       <div className="rounded-lg overflow-hidden shadow max-h-44">
-        <Image className="w-full object-cover" src={image} alt={alt}/>
+        <Image width={300} height={150} className="w-full object-cover" src={image} alt={alt}/>
       </div>
       <div className="py-2 px-3 relative">
         <Link href={href} className="font-bold text-lg text-heading underline">{title}</Link>
