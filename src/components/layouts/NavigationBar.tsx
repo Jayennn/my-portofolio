@@ -16,7 +16,7 @@ export function NavigationBar() {
       opacity: 1,
       transition: {
         when: "beforeChildren",
-        staggerChildren: 0.2,
+        staggerChildren: 0.1,
       },
     },
   };
@@ -28,7 +28,7 @@ export function NavigationBar() {
 
   return (
     <nav className="fixed top-0 z-10 w-full bg-white flex flex-col items-center h-16 md:h-20">
-      <div className="max-w-[90%] mx-auto container px-6 py-4 flex items-center justify-between">
+      <div className="md:max-w-[90%] md:mx-auto container md:px-6 py-4 flex items-center justify-between">
         <div className="space-y-1 relative">
           <h1
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -101,13 +101,13 @@ export function NavigationBar() {
             variants={containerVariants}
           >
             <motion.ul className="max-w-[90%] mx-auto container px-6 py-4 overflow-hidden flex flex-col gap-6 font-medium text-base text-paragraph">
-              <motion.li variants={itemVariants}>
+              <motion.li onClick={() => setIsOpen(false)} variants={itemVariants}>
                 <Link href="/#journey">Journey</Link>
               </motion.li>
-              <motion.li variants={itemVariants}>
+              <motion.li onClick={() => setIsOpen(false)} variants={itemVariants}>
                 <Link href="/#portofolio">Portofolio</Link>
               </motion.li>
-              <motion.li variants={itemVariants}>
+              <motion.li onClick={() => setIsOpen(false)} variants={itemVariants}>
                 <Link href="/#contact">Contact</Link>
               </motion.li>
             </motion.ul>

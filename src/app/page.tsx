@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import { NavigationBar } from "@/components/layouts/NavigationBar";
 import {Card} from "@/components/Card";
@@ -10,8 +9,8 @@ export default function Home() {
     <main>
       <NavigationBar />
 
-      <section className="py-32 md:py-44 max-w-[90%] mx-auto">
-        <div className="container px-6 flex items-center">
+      <section className="py-32 md:py-44 md:max-w-[90%] md:mx-auto">
+        <div className="container md:px-6 flex items-center">
           <div className="w-full grid lg:grid-cols-3 items-center lg:px-24">
             <div className="space-y-2 col-span-2">
               <h1 className="font-bold text-4xl md:text-5xl text-heading">Hi, my name is Giant</h1>
@@ -25,8 +24,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="journey" className="py-32 md:py-44 max-w-[90%] mx-auto">
-        <div className="container px-6 flex items-center relative">
+      <section id="journey" className="py-32 md:py-44 md:max-w-[90%] md:mx-auto">
+        <div className="container md:px-6 flex items-center relative">
           <div className="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl">
             <div className="w-[10rem] h-[10rem] bg-[#00FF85] opacity-40"></div>
           </div>
@@ -54,15 +53,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="portofolio" className="py-32 md:py-44 max-w-[90%] mx-auto">
-        <div className="relative container px-6 flex flex-col items-center justify-center space-y-6">
+      <section id="portofolio" className="py-32 md:py-44 md:max-w-[90%] md:mx-auto">
+        <div className="relative container md:px-6 flex flex-col items-center justify-center space-y-6">
           <div className="absolute top-28 md:top-6 w-full h-full -z-10 bg-gradient-to-b from-slate-300 opacity-80 to-white blur-3xl"></div>
           <div className="flex items-center justify-between w-full">
             <h1 className="font-bold text-4xl text-heading">Portofolio</h1>
-            {/*<Button className="font-semibold text-lg group">*/}
-            {/*  See All*/}
-            {/*  <ChevronRight className="opacity-0 group-hover:opacity-100 -translate-x-5 group-hover:translate-x-0 transition-all ml-2 w-4 h-4" />*/}
-            {/*</Button>*/}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <Card
@@ -90,7 +85,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="py-32 md:py-44 max-w-[90%] mx-auto overflow-hidden">
+      <section id="contact" className="py-32 md:py-44 md:max-w-[90%] md:mx-auto overflow-hidden">
         <div className="container flex items-center justify-center relative">
           <svg className="absolute" width="950" height="512" viewBox="0 0 950 512" fill="none">
             <circle cx="475" cy="256" r="474.5" className="stroke-gray-500"/>
