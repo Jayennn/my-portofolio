@@ -13,7 +13,7 @@ export default function Home() {
         <div className="container md:px-6 flex items-center">
           <div className="w-full grid lg:grid-cols-3 items-center lg:px-24">
             <div className="space-y-2 col-span-2">
-              <h1 className="font-bold text-4xl md:text-5xl text-heading">Hi, my name is Giant</h1>
+              <h1 className="font-bold text-3xl md:text-5xl text-heading">Hi, my name is Giant</h1>
               <p className="font-medium text-lg text-paragraph">Crafting a Better Tomorrow with Every Keystroke.</p>
             </div>
             <div className="flex items-center relative">
@@ -57,7 +57,7 @@ export default function Home() {
         <div className="relative container md:px-6 flex flex-col items-center justify-center space-y-6">
           <div className="absolute top-28 md:top-6 w-full h-full -z-10 bg-gradient-to-b from-slate-300 opacity-80 to-white blur-3xl"></div>
           <div className="flex items-center justify-between w-full">
-            <h1 className="font-bold text-4xl text-heading">Portofolio</h1>
+            <h1 className="font-bold text-3xl md:text-4xl text-heading">Portofolio</h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <Card

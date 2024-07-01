@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
+    @apply selection:bg-stone-300
 }
 
 .transform-hamburger {
