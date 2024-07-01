@@ -73,7 +73,7 @@ export function NavigationBar() {
         </div>
         <Button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-[32px] h-[32px] rounded-[50%] border flex lg:hidden justify-center items-center bg-transparent"
+          className="w-[32px] h-[32px] rounded-[50%] border flex md:hidden justify-center items-center bg-transparent"
         >
           <span
             className={cn(
