@@ -2,7 +2,7 @@ import Image, {StaticImageData} from "next/image";
 import Link from "next/link";
 
 interface CardProps {
-  image: StaticImageData,
+  image: StaticImageData | string,
   alt: string
   title: string,
   exact: string,
